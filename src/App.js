@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Shoes from './pages/Shoes';
 import Accueil from './pages/Accueil';
+import About from './pages/About';
 import './App.css';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Accueil />} />
         <Route path="/shoes" element={<Shoes />} />
+        <Route path="/About" element={<About/>} />
       </Routes>
       <Footer />
     </BrowserRouter>

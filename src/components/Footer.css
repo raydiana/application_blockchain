@@ -7,4 +7,9 @@
     position: absolute;
     width: 100%;
   }
+
+  a{
+    padding: 12px;
+    display: inline-block;
+  }
   
