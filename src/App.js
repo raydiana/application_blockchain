@@ -2,8 +2,9 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import Shoes from './pages/Shoes';
-import Accueil from './pages/Accueil';
+import Shoes from './pages/Shoes/Shoes';
+import Accueil from './pages/Accueil/Accueil';
+import Details from './pages/Details/ShoesDetail'
 import './App.css';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Accueil />} />
         <Route path="/shoes" element={<Shoes />} />
+        <Route path="/shoesdetail" element={<Details/>}></Route>
       </Routes>
       <Footer />
     </BrowserRouter>

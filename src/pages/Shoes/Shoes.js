@@ -1,5 +1,6 @@
 import React from 'react';
-import './chaussures.css';
+import './Shoes.css';
+import { Link } from 'react-router-dom'
 
 const shoes = [
   {
@@ -28,12 +29,15 @@ const shoes = [
   },
 ];
 
+
 const Shoes = () => {
   return (
     <div className="shoes">
       {shoes.map((shoe) => (
         <div key={shoe.id} className="shoe">
-          <img src={shoe.image} alt={shoe.name} />
+          <Link to="/shoesdetail">
+            <img src={shoe.image} alt={shoe.name}/>
+          </Link>
           <h3>{shoe.name}</h3>
           <p>Prix : {shoe.price} euros</p>
         </div>
