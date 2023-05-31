@@ -2,16 +2,13 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-<<<<<<< HEAD
+import Details from './pages/Details/ShoesDetail'
 import Shoes from './pages/Shoes/Shoes';
 import Accueil from './pages/Accueil/Accueil';
-import Details from './pages/Details/ShoesDetail'
-=======
-import Shoes from './pages/Shoes';
-import Accueil from './pages/Accueil';
-import About from './pages/About';
->>>>>>> d20d458731bb3fbdfacc3795c37e6583f420bfd6
+import About from './pages/About/About';
+import Contact from './pages/Contact/Contact';
 import './App.css';
+import ShoppingCart from './pages/ShoppingCart/Shoppingcart';
 
 function App() {
   return (
@@ -20,11 +17,10 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Accueil />} />
         <Route path="/shoes" element={<Shoes />} />
-<<<<<<< HEAD
-        <Route path="/shoesdetail" element={<Details/>}></Route>
-=======
+        <Route path="/shoesdetail" element={<Details/>} />
         <Route path="/About" element={<About/>} />
->>>>>>> d20d458731bb3fbdfacc3795c37e6583f420bfd6
+        <Route path="/Contact" element={<Contact/>} />
+        <Route path="/ShoppingCart" element={<ShoppingCart/>} />
       </Routes>
       <Footer />
     </BrowserRouter>
