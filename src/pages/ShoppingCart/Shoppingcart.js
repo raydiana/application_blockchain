@@ -1,5 +1,5 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useSearchParams } from "react-router-dom";
 import "./Shoppingcart.css"
 
 const cartItems = [{
@@ -9,7 +9,11 @@ const cartItems = [{
     quantity: 1
 }];
 const ShoppingCart = () => {
+  const [searchParams] = useSearchParams();
 
+  const price = searchParams.get("price")
+  const quantity = searchParams.get("quantity");
+  console.log(price);
     const removeFromCart = (item) => {
         cartItems = cartItems.filter((cartItem) => cartItem.id !== item.id);
       };
@@ -30,7 +34,7 @@ const ShoppingCart = () => {
 
   return (
     <div>
-      <h2>ShoppingCart</h2>
+      <h2>Panier</h2>
       {cartItems && cartItems.length === 0 ? (
         <p>ShoppingCart is empty!</p>
       ) : (

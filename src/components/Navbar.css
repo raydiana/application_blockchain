@@ -44,3 +44,47 @@
     }
   }
   
+  .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #0b084e;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  li:hover .dropdown {
+    display: block;
+  }
+  
+  .dropdown li {
+    margin-bottom: 5px;
+  }
+  
+  .dropdown a {
+    display: block;
+    padding: 5px;
+  }
+  
+  .dropdown a:hover {
+    color: #007bff;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  
+  a:hover {
+    color: #007bff;
+  }
+
+  .cloth {
+    margin-top: 12px;
+  }

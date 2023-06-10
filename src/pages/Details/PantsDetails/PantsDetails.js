@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import './ShoesDetail.css'
-import {Link, useParams} from 'react-router-dom'
-import shoes from "../../datas/shoes/shoesdata";
+import "./PantsDetails.css"
+import {Link, useParams} from 'react-router-dom';
+import pants from "../../../datas/pants/pantsdata";
 
-const ShoesDetail = () => {
+const PantsDetails = () => {
   const {id} = useParams();
   const [quantity, setQuantity] = useState(1);
 
@@ -27,10 +27,10 @@ const ShoesDetail = () => {
   return (
     <div className="container">
       <div className="product">
-        <img src={shoes[id-1].image} alt="666"></img>
+        <img src={pants[id-1].image} alt="666"></img>
       </div>
       <div className="details">
-        <h2>{shoes[id-1].name}</h2>
+        <h2>{pants[id-1].name}</h2>
         <p>Description</p>
         <p>Price: 80 euros</p>
         <div className="quantity">
@@ -56,4 +56,4 @@ const ShoesDetail = () => {
   );
 };
 
-export default ShoesDetail;
+export default PantsDetails;

@@ -1,0 +1,17 @@
+.shorts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+  }
+  
+.short {
+  background-color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.short img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}

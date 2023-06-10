@@ -1,18 +1,17 @@
-.container {
+.container1 {
   display: flex;
   align-items: center;
   padding: 20px;
 }
 
-.product-image {
-  width: 50%;
-}
-
-.product-image img {
+.product1image {
   max-width: 100%;
   height: auto;
   margin-left: 50px;
-  margin-top: 25px;
+  margin-right: 25px;
+}
+
+.product1-image img {
 }
 
 
@@ -42,5 +41,4 @@
   border: none;
   cursor: pointer;
 }
-
 

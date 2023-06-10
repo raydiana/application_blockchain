@@ -1,0 +1,17 @@
+.pants {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+
+.pant {
+  background-color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.pant img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
